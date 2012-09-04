@@ -1,47 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"> 
-<head> 
-<meta http-equiv="X-UA-Compatible" content="chrome=1"> 
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
-<title>Google Gravity</title> 
-<style> 
-body,td,a,p,.h{font-family:arial,sans-serif}.h{color:#36c;font-size:20px}.q{color:#00c}.ts td{padding:0}.ts{border-collapse:collapse}#gbar{height:22px;padding-left:2px}.gbh,.gbd{border-top:1px solid #c9d7f1;font-size:1px}.gbh{height:0;position:absolute;top:24px;width:100%}#gbi,#gbs{background:#fff;left:0;position:absolute;top:24px;visibility:hidden;z-index:1000}#gbi{border:1px solid;border-color:#c9d7f1 #36c #36c #a2bae7;z-index:1001}#guser{padding-bottom:7px !important}#gbar,#guser{font-size:13px;padding-top:1px !important}@media all{.gb1,.gb3{height:22px;margin-right:.73em;vertical-align:top}#gbar{float:left}}.gb2{display:block;padding:.2em .5em}a.gb1,a.gb2,a.gb3{color:#00c !important}.gb2,.gb3{text-decoration:none}a.gb2:hover{background:#36c;color:#fff !important}
- 
-/* results */
- 
-h3,.med{font-size:medium;font-weight:normal;padding:0;margin:0}.r{display:inline;font-weight:normal;margin:0}.r{font-size:medium}.w10,.w20{background:url(files/nav_logo4.png) no-repeat;border:0;cursor:pointer;margin-left:8px;height:16px;vertical-align:bottom;width:16px}.w10{background-position:-152px 0}.w20{margin-left:3px}.w20{background-position:-152px -32px}.s{width:600px}.a,cite,.cite,.cite:link{color:green;font-style:normal}
- 
-body
-{
-	overflow: hidden;
-}
- 
-/*  onload="document.f.q.focus();if(document.images)new Image().src='/images/nav_logo3.png'" */
-</style> 
-<script type="text/javascript"> 
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-86951-7']);
-  _gaq.push(['_trackPageview']);
- 
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ga);
-  })();
-</script> 
-</head> 
-<body bgcolor=#ffffff text=#000000 link=#0000cc vlink=#551a8b alink=#ff0000 topmargin=3 marginheight=3 onload="onLoad()"> 
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
 
-<div id=gbar><nobr><b class="gb1 box2d">Web</b> <a href="http://images.google.com/imghp?hl=en&tab=wi" onclick=gbar.qs(this) class="gb1 box2d">Images</a> <a href="http://maps.google.com/maps?hl=en&tab=wl" onclick=gbar.qs(this) class="gb1 box2d">Maps</a> <a href="http://news.google.com/nwshp?hl=en&tab=wn" onclick=gbar.qs(this) class="gb1 box2d">News</a> <a href="http://www.google.com/prdhp?hl=en&tab=wf" onclick=gbar.qs(this) class="gb1 box2d">Shopping</a> <a href="http://mail.google.com/mail/?hl=en&tab=wm" class="gb1 box2d">Mail</a> <a href="http://www.google.com/intl/en/options/" onclick="this.blur();gbar.tg(event);return !1" class="gb3 box2d"><u>more</u> <small>&#9660;</small></a><div id=gbi> <a href="http://video.google.com/?hl=en&tab=wv" onclick=gbar.qs(this) class=gb2>Video</a> <a href="http://groups.google.com/grphp?hl=en&tab=wg" onclick=gbar.qs(this) class=gb2>Groups</a> <a href="http://books.google.com/bkshp?hl=en&tab=wp" onclick=gbar.qs(this) class=gb2>Books</a> <a href="http://scholar.google.com/schhp?hl=en&tab=ws" onclick=gbar.qs(this) class=gb2>Scholar</a> <a href="http://finance.google.com/finance?hl=en&tab=we" onclick=gbar.qs(this) class=gb2>Finance</a> <a href="http://blogsearch.google.com/?hl=en&tab=wb" onclick=gbar.qs(this) class=gb2>Blogs</a> <div class=gb2><div class=gbd></div></div> <a href="http://uk.youtube.com/?hl=en&tab=w1" onclick=gbar.qs(this) class=gb2>YouTube</a> <a href="http://www.google.com/calendar/render?hl=en&tab=wc" class=gb2>Calendar</a> <a href="http://picasaweb.google.com/home?hl=en&tab=wq" onclick=gbar.qs(this) class=gb2>Photos</a> <a href="http://docs.google.com/?hl=en&tab=wo" class=gb2>Documents</a> <a href="http://www.google.com/reader/view/?hl=en&tab=wy" class=gb2>Reader</a> <a href="http://sites.google.com/?hl=en&tab=w3" class=gb2>Sites</a> <div class=gb2><div class=gbd></div></div> <a href="http://www.google.com/intl/en/options/" class=gb2>even more &raquo;</a></div> </nobr></div><div class=gbh style=left:0></div><div class=gbh style=right:0></div><div align=right id=guser style="font-size:84%;padding:0 0 4px" width=100%><nobr><a href="http://www.google.com/url?sa=p&pref=ig&pval=3&q=http://www.google.com/ig%3Fhl%3Den%26source%3Diglk&usg=AFQjCNH9dUJQAsNWnO3XKq2EIPgFbczqlA" class="box2d">iGoogle</a> <span class="box2d">|</span> <a href="https://www.google.com/accounts/Login?continue=http://www.google.com/&hl=en" class="box2d">Sign in</a></nobr></div><a href="https://github.com/christose"><h5>点击这里进入luo.qiang的项目主页(Click here to get a entry into Christose's projects‘ home page)</h5></a><center><br clear=all id=lgpd><a href=""><img class="box2d" alt="Google" height=110 border=0 src="Google Gravity_files/logo.gif" width=276></a><br><br><form name=f autocomplete="off" onsubmit="return false"><table cellpadding=0 cellspacing=0><tr valign=top><td width=25%>&nbsp;</td><td align=center nowrap><input name=hl type=hidden value=en><input class="box2d" maxlength=2048 id=q name=q size=55 title="Google Search" value=""><br><input class="box2d" id=btnG name=btnG type=submit value="Google Search" onclick="search(this)"><input class="box2d" id=btnI name=btnI type=submit value="I'm Feeling Lucky"></td><td nowrap width=25%><font size=-2>&nbsp;&nbsp;<a class="box2d" href=http://www.google.com/advanced_search?hl=en>Advanced Search</a><br>&nbsp;&nbsp;<a class="box2d" href=http://www.google.com/preferences?hl=en>Preferences</a><br>&nbsp;&nbsp;<a class="box2d" href=http://www.google.com/language_tools?hl=en>Language Tools</a></font></td></tr><tr><td align=center colspan=3><font size=-1><span style="text-align:left"><span class="box2d">Search:</span> <input class="box2d" id=all type=radio name=meta value="" checked><label class="box2d" for=all>&nbsp;&nbsp;the web&nbsp;&nbsp;</label><input class="box2d" id=cty type=radio name=meta value="cr=countryUK|countryGB"><label class="box2d" for=cty>&nbsp;&nbsp;pages from the UK&nbsp;&nbsp;</label></span></font></td></tr></table></form><br><br><font size=-1><a class="box2d" href="http://www.google.com/intl/en/ads/">Advertising&nbsp;Programmes</a> <span class="box2d">-</span> <a class="box2d" href="http://www.google.com/services/">Business Solutions</a> <span class="box2d">-</span> <a class="box2d" href="http://www.google.com/intl/en/about.html">About Google</a> <span class="box2d">-</span> <a class="box2d" href=http://www.google.com/ncr>Go to Google.com</a></font></center> 
+    <title>Nathanielalexislo.github.com by nathanielalexislo</title>
+  </head>
 
-<div id="canvas"></div> 
+  <body>
+    <header>
+      <div class="inner">
+        <h1>Nathanielalexislo.github.com</h1>
+        <h2></h2>
+        <a href="https://github.com/nathanielalexislo" class="button"><small>Follow me on</small>GitHub</a>
+      </div>
+    </header>
 
-<script src="Google Gravity_files/protoclass.js"></script> 
-<script src="Google Gravity_files/box2d.js"></script> 
-<script src="http://www.google.com/uds/api?file=uds.js&v=0.1" type="text/javascript"></script> 
-<script src="Google Gravity_files/Main.js"></script> 
- 
-</body> 
- 
-</html> 
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+          <h3>Welcome to GitHub Pages.</h3>
+
+<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+
+<pre><code>$ cd your_repo_root/repo_name
+$ git fetch origin
+$ git checkout gh-pages
+</code></pre>
+
+<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+
+<h3>Designer Templates</h3>
+
+<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
+
+<h3>Rather Drive Stick?</h3>
+
+<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+
+<h3>Authors and Contributors</h3>
+
+<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+
+<h3>Support or Contact</h3>
+
+<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
+        </section>
+
+        <aside id="sidebar">
+
+
+          <p>This page was generated by <a href="pages.github.com">GitHub Pages</a> using the Architect theme by <a href="http://twitter.com/jasonlong">Jason Long</a>.</p>
+        </aside>
+      </div>
+    </div>
+
+  
+  </body>
+</html>
