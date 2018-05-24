@@ -1,0 +1,32 @@
+<html>
+<body>
+
+<script type="text/javascript">
+
+//bad webgl detect
+function detectWebGLContextBad() {
+  if (window.WebGLRenderingContext) {
+    return true;
+  }
+  return false;
+}
+
+//good webgl detect
+function detectWebGLContextGood() {
+  var canvas = document.createElement("canvas");
+  var gl = canvas.getContext("webgl") || canvas.getContext("experimental-webgl");
+  if (gl && gl instanceof WebGLRenderingContext) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+//print webgl detect result
+document.write("detectWebGLContextBad判断结果: " + detectWebGLContextBad() + "<br />")
+document.write("detectWebGLContextGood判断结果: " + detectWebGLContextGood() + "<br />")
+
+</script>
+
+</body>
+</html>
