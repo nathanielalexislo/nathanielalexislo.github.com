@@ -44,8 +44,6 @@ function getUserMedia(constrains,success,error){
 }
 
 var video = document.getElementById("video");
-var capCanvas = document.getElementById("capCanvas");
-var capContext = capCanvas.getContext("2d");
 
 //成功的回调函数
 function success(stream){
@@ -70,21 +68,12 @@ if (navigator.mediaDevices.getUserMedia || navigator.getUserMedia || navigator.w
     alert("你的浏览器不支持访问用户媒体设备");
 }
 
-//注册拍照按钮的单击事件
-document.getElementById("capture").addEventListener("click",function(){
-    //绘制画面
-    capContext.drawImage(video,0,0,480,320);
-});
+getUserMedia({}, success, error);
+  
 </script>
 
 <!--video用于显示媒体设备的视频流，自动播放-->
 <video id="video" autoplay style="width: 480px;height: 320px"></video>
-<!--拍照按钮-->
-<div>
-<button id="capture">拍照</button>
-</div>
-<!--描绘video截图-->
-<canvas id="capCanvas" width="480" height="320"></canvas>
 
 </body>
 </html>
