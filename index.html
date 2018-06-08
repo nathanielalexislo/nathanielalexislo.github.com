@@ -67,12 +67,6 @@ if (navigator.mediaDevices.getUserMedia || navigator.getUserMedia || navigator.w
 } else {
     alert("你的浏览器不支持访问用户媒体设备");
 }
-
-var constrains = {
-  audio: true,
-  video: { width: 1280, height: 720 }
-}
-getUserMedia(constrains, success, error);
   
 </script>
 
